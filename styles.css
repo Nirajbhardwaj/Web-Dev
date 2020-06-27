@@ -128,11 +128,12 @@
 
 
 a:link {
-    color:#99e600;
+    color:black;
+    font-weight: bolder;
 }
 
 a:visited {
-    color:#99e600;
+    color:black;
 }
 
 
@@ -157,36 +158,55 @@ a:hover {
 
 
 .her{
-	position: sticky;
+	position: relative;
 	top: 0;
 	color: black;
 	padding-top: 0px;
-	padding-left:50px;
+	margin-left:50px;
 	font-size:20px;
-	display: inline-block;
+	display:inline;
 	border: 5px auto;
 	font-size: 1.5rem;
 }
 
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
 
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
 
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px; /* Used in this example to enable scrolling */
+}
 
 .hear{
-	
-	position: sticky;
+  	position: fixed;
+  	overflow: hidden;
 	top: 0;
-	background-color: black;
-	display: inline-block;
 	margin-top:0.5rem; 
-	margin-left: 0.5rem;
+	margin-left: 10rem;
 	padding-top:1.5rem;
 	padding-bottom:1.5rem;
 	padding-right:1.5rem;
 	padding-left:1rem;
 	border-width: 2px;
 	border-color: white;
+	width:100%;
 }
-
 
 .hears
 {	
@@ -278,6 +298,9 @@ a:hover {
 	margin-top: 3rem;
 	padding-left: 2rem;
 	background:url("edu.jpg");
+	background-repeat: no-repeat;
+	background-attachment:fixed; 
+	background-size: cover;
 }
 
 .a2{
@@ -289,6 +312,9 @@ a:hover {
 	margin-top: 3rem;
 	padding-left: 2rem;
 	background:url("work.jpg");
+	background-repeat: no-repeat;
+	background-attachment:fixed; 
+	background-size: cover;
 }
 
 .a3{
@@ -300,6 +326,9 @@ a:hover {
 	margin-top: 3rem;
 	padding-left: 2rem;
 	background:url("proj.jpg");
+	background-repeat: no-repeat;
+	background-attachment:fixed; 
+	background-size: cover;
 }
 
 .a4{
@@ -311,6 +340,9 @@ a:hover {
 	margin-top: 3rem;
 	padding-left: 2rem;
 	background:url("train.jpg");
+	background-repeat: no-repeat;
+	background-attachment:fixed; 
+	background-size: cover;
 }
 
 .har
@@ -471,19 +503,20 @@ a:hover {
 
 
 .pro{
-	position: relative;
-	display: inline-block;
-	margin-left: 20rem;
-        margin-top: 02rem;
+	position: absolute;
+	display:block;
+	margin-left: 10rem;
+        margin-top: 10rem;
         margin-bottom: 5rem;
-        background-size:43px;
+        background-size:20px;
     background-repeat: no-repeat;
-	    padding-bottom: 6rem;
-	    transition: transform 0.5s;
+    justify-content: space-around;
 }
 
-.pro:hover{
-	-ms-transform: scale(1.5); /* IE 9 */
-  -webkit-transform: scale(1.5); /* Safari 3-8 */
-  transform: scale(1.5);
+img {
+  opacity: 0.7;
+}
+
+img:hover {
+  opacity: 1.0;
 }
