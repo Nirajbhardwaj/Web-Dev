@@ -127,17 +127,17 @@
 
 
 
-a:link {
+.hear a:link {
     color:black;
     font-weight: bolder;
 }
 
-a:visited {
+.hear a:visited {
     color:black;
 }
 
 
-a:hover {
+.hear a:hover {
     color: red;
     transition: all 1.5s ease;
     font-size:150%;
@@ -406,6 +406,7 @@ a:hover {
 	position: relative;
 	font-family:sans-serif;
 	margin-left:20rem;
+	align-content: center;
 	text-align: center;
 	font-size: 5rem;
 	max-width: 600px;
@@ -424,6 +425,10 @@ a:hover {
 	margin-bottom: 1.5rem;
 	text-decoration: none;
 
+}
+
+.hrs a{
+	color: yellow;
 }
 
 .hj{
@@ -519,4 +524,14 @@ img {
 
 img:hover {
   opacity: 1.0;
+}
+
+
+@viewport {
+  width: device-width ;
+  zoom: 1.0 ;
+}
+
+@-ms-viewport {
+  width: device-width ;
 }
